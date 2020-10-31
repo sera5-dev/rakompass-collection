@@ -81,6 +81,44 @@
 					"response": []
 				},
 				{
+					"name": "show contacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/crews/1/contacts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"crews",
+								"1",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show socials",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/crews/1/socials",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"crews",
+								"1",
+								"socials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "update",
 					"request": {
 						"method": "POST",
@@ -95,15 +133,13 @@
 								},
 								{
 									"key": "name",
-									"value": "Rifqi Sambas Khairurrohman",
-									"type": "text",
-									"disabled": true
+									"value": "Shofyani Nur Azizah",
+									"type": "text"
 								},
 								{
 									"key": "birth_place",
 									"value": "Bandung",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "birth_date",
@@ -133,13 +169,13 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "contact",
+									"key": "contact_id",
 									"value": "1",
 									"type": "text"
 								},
 								{
 									"key": "value",
-									"value": "6281330064705",
+									"value": "6281330064704",
 									"type": "text"
 								}
 							],
@@ -170,8 +206,8 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "social",
-									"value": "1",
+									"key": "social_id",
+									"value": "6",
 									"type": "text"
 								},
 								{
@@ -220,6 +256,64 @@
 							],
 							"path": [
 								"crews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete contact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/crews/1/contacts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"crews",
+								"1",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete social",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/crews/1/socials",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"crews",
+								"1",
+								"socials"
 							]
 						}
 					},
@@ -363,7 +457,7 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "crew",
+									"key": "crew_id",
 									"value": "1",
 									"type": "text"
 								}
@@ -456,14 +550,11 @@
 							"mode": "urlencoded",
 							"urlencoded": [
 								{
-									"key": "crew",
+									"key": "crew_id",
 									"value": "1",
 									"type": "text"
 								}
-							],
-							"options": {
-								"urlencoded": {}
-							}
+							]
 						},
 						"url": {
 							"raw": "{{url}}/programs/1/crews",
@@ -494,7 +585,7 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "program",
+									"key": "program_id",
 									"value": "1",
 									"type": "text"
 								},
@@ -798,8 +889,8 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "nama",
-									"value": "whatsapp",
+									"key": "name",
+									"value": "reddit",
 									"type": "text"
 								},
 								{
