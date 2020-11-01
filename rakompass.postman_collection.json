@@ -18,7 +18,7 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "Shofyani",
+									"value": "Sambas",
 									"type": "text"
 								},
 								{
@@ -30,6 +30,16 @@
 									"key": "birth_date",
 									"value": "1997-05-08",
 									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Katapang",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/rns/me/iu/pix/knsxmaqg0ks51.jpg"
 								}
 							]
 						},
@@ -128,12 +138,12 @@
 							"formdata": [
 								{
 									"key": "id",
-									"value": "2",
+									"value": "1",
 									"type": "text"
 								},
 								{
 									"key": "name",
-									"value": "Shofyani Nur Azizah",
+									"value": "Rifqi Sambas Khairurrohman",
 									"type": "text"
 								},
 								{
@@ -143,8 +153,18 @@
 								},
 								{
 									"key": "birth_date",
-									"value": "1997-05-08",
+									"value": "1999-03-27",
 									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/rns/me/iu/pix/akdxjaffh9s51.jpg"
 								}
 							]
 						},
@@ -229,6 +249,41 @@
 								"crews",
 								"1",
 								"socials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add avatar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "social_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "rifqisambas",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/crews",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"crews"
 							]
 						}
 					},
@@ -732,8 +787,8 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "jadwal",
-									"value": "2",
+									"key": "schedule_id",
+									"value": "1",
 									"type": "text"
 								},
 								{
@@ -742,13 +797,18 @@
 									"type": "text"
 								},
 								{
-									"key": "tema",
+									"key": "theme",
 									"value": "menggunakan search engine",
 									"type": "text"
 								},
 								{
 									"key": "episode",
 									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-10-10",
 									"type": "text"
 								}
 							]
