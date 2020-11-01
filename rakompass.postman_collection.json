@@ -41,7 +41,10 @@
 									"type": "file",
 									"src": "/home/rns/me/iu/pix/knsxmaqg0ks51.jpg"
 								}
-							]
+							],
+							"options": {
+								"formdata": {}
+							}
 						},
 						"url": {
 							"raw": "{{url}}/crews",
@@ -166,7 +169,10 @@
 									"type": "file",
 									"src": "/home/rns/me/iu/pix/akdxjaffh9s51.jpg"
 								}
-							]
+							],
+							"options": {
+								"formdata": {}
+							}
 						},
 						"url": {
 							"raw": "{{url}}/crews",
@@ -516,7 +522,10 @@
 									"value": "1",
 									"type": "text"
 								}
-							]
+							],
+							"options": {
+								"formdata": {}
+							}
 						},
 						"url": {
 							"raw": "{{url}}/programs/1/crews",
@@ -609,7 +618,10 @@
 									"value": "1",
 									"type": "text"
 								}
-							]
+							],
+							"options": {
+								"urlencoded": {}
+							}
 						},
 						"url": {
 							"raw": "{{url}}/programs/1/crews",
@@ -659,7 +671,10 @@
 									"value": "10:00:00",
 									"type": "text"
 								}
-							]
+							],
+							"options": {
+								"formdata": {}
+							}
 						},
 						"url": {
 							"raw": "{{url}}/schedules",
@@ -811,7 +826,10 @@
 									"value": "2020-10-10",
 									"type": "text"
 								}
-							]
+							],
+							"options": {
+								"formdata": {}
+							}
 						},
 						"url": {
 							"raw": "{{url}}/episodes",
@@ -958,7 +976,10 @@
 									"value": "",
 									"type": "text"
 								}
-							]
+							],
+							"options": {
+								"formdata": {}
+							}
 						},
 						"url": {
 							"raw": "{{url}}/socials",
@@ -1367,19 +1388,23 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "17 Agustus",
+									"value": "Agustusan",
 									"type": "text"
 								},
 								{
 									"key": "time",
-									"value": "pass",
-									"type": "text",
-									"disabled": true
+									"value": "2020-08-17 08:00:00",
+									"type": "text"
 								},
 								{
 									"key": "description",
-									"value": "",
-									"type": "text",
+									"value": "ksajflksajf;lksajdf;ksajdf;ljdsa;fkjsad;fkjsa;dkjf;sakdjf;sakljf;ksadjf;kjsadf;lksajdf;lkjsad;lfsadf",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/rns/me/iu/pix/EX8cXMcU4AEo_p_.jpeg",
 									"disabled": true
 								}
 							]
@@ -1458,6 +1483,12 @@
 									"key": "description",
 									"value": "Pass FM mengadakan lomba 17 Agustus 2020",
 									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
 								}
 							]
 						},
@@ -1495,6 +1526,163 @@
 							],
 							"path": [
 								"events"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "partners",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "TK Al-Istiqomah 2",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Kp. Juntihilir",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "instansi pendidikan anak usia dini didirikan pada bla bla",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/partners",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"partners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/partners",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"partners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/partners/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"partners",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "17 Agustus",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "2020-08-17 10:00:00",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Pass FM mengadakan lomba 17 Agustus 2020",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/partners",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"partners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/partners",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"partners"
 							]
 						}
 					},
